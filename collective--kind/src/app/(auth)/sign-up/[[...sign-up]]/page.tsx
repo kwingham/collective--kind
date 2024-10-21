@@ -1,11 +1,14 @@
-import React from 'react';
+import { SignUp } from "@clerk/nextjs";
+import { Card } from "@shadcn/ui";
 
-function Page() {
+const SignUpPage = () => {
   return (
-    <div>
-      Page
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <Card className="p-6">
+        <SignUp path="/sign-up" routing="path" signInUrl="/sign-in" />
+      </Card>
     </div>
   );
-}
+};
 
-export default Page;
+export default SignUpPage;
