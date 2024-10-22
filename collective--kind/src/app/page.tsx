@@ -1,20 +1,12 @@
 import { ReactNode } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import "../styles/globals.css";
 
-interface LayoutProps {
+interface PageProps {
   children: ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-grow">{children}</main>
-      <Footer />
-    </div>
-  );
+const Page = () => {
+  return <h1>Howzit home</h1>;
 };
 
-export default Layout;
+export default Page;

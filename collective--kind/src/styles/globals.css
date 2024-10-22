@@ -4,7 +4,7 @@
 @import "./shadcn-styles.css";
 
 body {
-  background-color: tomato;
+  background-color: rgb(6, 116, 61);
   color: hsl(var(--foreground, 240 10% 3.9%));
 }
 
