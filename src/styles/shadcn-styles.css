@@ -1,0 +1,58 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(var(--background, 0 0% 100%));
+  color: hsl(var(--foreground, 240 10% 3.9%));
+}
+
+/* Button styles */
+.button {
+  @apply px-4 py-2 rounded-md text-white;
+  background-color: hsl(var(--primary, 220 90% 56%));
+}
+
+.button:hover {
+  background-color: hsl(var(--primary-hover, 220 90% 46%));
+}
+
+/* Navbar styles */
+.navbar {
+  @apply bg-white shadow-md;
+}
+
+.navbar-brand {
+  @apply text-xl font-bold;
+}
+
+.navbar-menu {
+  @apply flex space-x-4;
+}
+
+.navbar-item {
+  @apply px-4 py-2 text-gray-700;
+}
+
+.navbar-item:hover {
+  @apply text-gray-900;
+}
+
+/* Card styles */
+.card {
+  @apply p-6 bg-white shadow-md rounded-lg;
+}
+
+.card-header {
+  @apply text-xl font-bold;
+}
+
+.card-body {
+  @apply mt-2 text-gray-600;
+}
+
+/* Footer styles */
+.footer {
+  @apply bg-gray-800 text-white py-4;
+}
+
+.footer p {
+  @apply text-center;
+}

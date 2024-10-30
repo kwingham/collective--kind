@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./shadcn-styles.css";
+
+body {
+  background-color: rgb(6, 116, 61);
+  color: hsl(var(--foreground, 240 10% 3.9%));
+}
+
+a {
+  @apply text-blue-500 hover:text-blue-700;
+}
